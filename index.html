@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="js/socket.io-1.4.5.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript">
+
+	</script>
+	<title> 匹配</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<!--
+	<div style="text-align:center;" id="center_ov">
+		<p id="title_p" class="title_p">匿名聊天</p>
+		<input type="button" id="pp_btn" value="开始匹配" name="" onclick="start()">
+		<a id="pp_z" class="pp_z">匹配中...</a>
+	</div>-->
+
+	<!--<div id="chat_box" class="chat_box">
+		<div id="div1" class="div1"></div>
+	</div>
+	<div style="display:none" id="fs">
+		<input type="text" id="chat_text">
+		<input type="button" id="chat_fas" value="发送" onclick="chat_()">
+		<input type="button" value="退出房间" onclick="out()">
+	</div>-->
+	<div id="body_t" style="min-height:100%;max-height:calc(100% - 50px);overflow:auto;width:100%;background:url(img/bg.jpg);background-size:100% 100%">
+		<div style="display:none" id="zxa" class="container bodw">
+			<div style="display:none;overflow-y:auto" class="chat_big_box col-lg-6 col-md-8 col-xs-12 col-lg-offset-3 col-md-offset-2"
+			 id="chat_big_box">
+			</div>
+		</div>
+		<div id="pp_all" class="container relativ">
+			<div class="title_text logowrapper">
+				<h1>匿名聊天</h1>
+				<div onclick="start()" id="pp_btn">开始聊天</div>
+				<div style="display:none" id="pp_z">匹配中...</div>
+			</div>
+		</div>
+	</div>
+	<div style="display:none" id="sent-box" class="sent-box col-lg-12">
+		<div class="out" onclick="out()">离开</div>
+		<input type="text" id="chat_text">
+		<div class="sent" onclick="chat_()">发送</div>
+	</div>
+
+</body>
+
+</html>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
